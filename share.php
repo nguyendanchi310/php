@@ -3,7 +3,7 @@
 /* == ID tài khoản muốn tăng share == */
 $user = 'nguyendanchi3110';
 /* == Token tài khoản chứa page == */
-$token = EAAAAAYsX7TsBAHW0CnTTOkzQwDhLVjmqL9d1kEDzEenRWZC6RBPvCnxhJjJHMjDuEi9Pm0ephUX19c7iujC4Aiu2LBYtJmUyStqfQLHqlZAXpPSEnq3r5bwaKUk3b2f9RUZA3q3ivYA3QX0hVybZBBjaPXxrGrBPuLLbf1OoAviCEBvLiZAgaACrNz0qAm28WB0tJpV3dDwZDZD
+$token = EAAAAAYsX7TsBADnMwNxmbZClwJUOcX3kri8mV1E29CWC1CX34AvrbSJ2k1XyZAFhsz94wZCKjxqoCrvC7WH8QzdgMkNXMiuPCk86RE0IKb4Dsr3ggDt8YzSpMUwoMhxPg7N6RDwj0zNHOWGzWMG4HkGoFaPmLa1hR0Qf0ySFmUCoYjZAXuP33dNjMaONppR8I2yM4Huet9ZCFOjnDcFsg
 $accounts = json_decode(cURL('https://graph.facebook.com/me/accounts?access_token=' . $token),true);
  
 $feed = json_decode(cURL('https://graph.facebook.com/' . $user . '/feed?access_token='.$token.'&limit=1'),true);
